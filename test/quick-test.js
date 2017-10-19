@@ -20,23 +20,18 @@ describe('quickSort', () => {
       assert.equal(sortCheck(quickSort(tenTwo)),true);
     });
    
-    it('should sort an array of 1000 indices with numerical data types', () => {
+    it('should sort an array of 1,000 indices with numerical data types', () => {
       let tenThree = populateRandomArray(0, 10000, 1000);
       assert.equal(sortCheck(quickSort(tenThree)),true);
     }); 
   
-    it('should sort an array of 10000 indices with numerical data types', () => {
+    it('should sort an array of 10,000 indices with numerical data types', () => {
       let tenFour = populateRandomArray(0, 100000, 10000);
       assert.equal(sortCheck(quickSort(tenFour)),true);
     });
   
-    it('should sort an array of 100000 indices with numerical data types', () => {
+    it('should sort an array of 100,000 indices with numerical data types', () => {
       let tenFive = populateRandomArray(0, 1000000, 100000);
-      assert.equal(sortCheck(quickSort(tenFive)),true);
-    });
-  
-    it('should sort an array of 1,000,000 indices with numerical data types', () => {
-      let tenFive = populateRandomArray(0, 1000000, 400000);
       assert.equal(sortCheck(quickSort(tenFive)),true);
     });
 
