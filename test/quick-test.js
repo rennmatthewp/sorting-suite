@@ -34,6 +34,11 @@ describe('quickSort', () => {
       let tenFive = populateRandomArray(0, 1000000, 100000);
       assert.equal(sortCheck(quickSort(tenFive)),true);
     });
+  
+    it('should sort an array of 1,000,000 indices with numerical data types', () => {
+      let tenSix = populateRandomArray(0, 1000, 1000000);
+      assert.equal(sortCheck(quickSort(tenSix)),true);
+    });
 
     it('should sort an array of negative numerical data types', () => {
       let negativeArray = populateRandomArray(-100, 1000, 100);
