@@ -35,6 +35,11 @@ describe('mergeSort', () => {
       assert.equal(sortCheck(mergeSort(tenFive)),true);
     });
 
+    // it('should sort an array of 200000 indices with numerical data types', () => {
+    //   let tenSix = populateRandomArray(0, 100, 200000);
+    //   assert.equal(sortCheck(mergeSort(tenSix)),true);
+    // });
+
     it('should sort an array of negative numerical data types', () => {
       let negativeArray = populateRandomArray(-100, 1000, 100);
       assert.equal(sortCheck(mergeSort(negativeArray)),true);
